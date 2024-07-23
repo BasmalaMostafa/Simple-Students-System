@@ -1,0 +1,14 @@
+@if(student){
+    <div class="alert alert-info w-75 m-5 text-center">
+        <h3>Name: {{student.name}}</h3>
+        <h3>Age: {{student.age}}</h3>
+        <h3>Email: {{student.email}}</h3>
+        <br>
+        <button routerLink="/students/{{studentId}}/update" class="btn btn-info" style="color: white;margin-right: 20px;font-weight: bold;" type="button">update</button>
+        <button (click)="confirmDelete()" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/" class="btn btn-info" style="color: white;font-weight: bold;" type="button">
+            delete
+        </button>
+
+        </div>
+        
+}

@@ -1,0 +1,17 @@
+
+
+    <div class="d-flex" style="flex-wrap: wrap;justify-content: center;margin-top: 3%;">
+        @for (s of students; track s.id) {
+            <app-student [myStudent]="s"></app-student>
+        }
+        </div>
+
+
+<!-- <button class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat" type="button"><i class="material-icons pmd-lg">+</i></button> -->
+
+<div class="dropup position-absolute bottom-0 end-0 m-5">
+    <button routerLink="/students/add" type="button" class="btn btn-info btn-lg rounded-circle" style="color: white; font-weight: bold;font-size: x-large;">
+    +
+    </button>
+    
+  </div>
